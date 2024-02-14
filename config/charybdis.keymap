@@ -89,7 +89,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans         &trans       &trans     &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp CAPSLOCK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INS       &trans
-                        &trans  &trans  &trans    &trans    &trans
+                        &trans  &trans  &trans    &trans    &kp DELETE
             >;
 
             label = "Navigation";
