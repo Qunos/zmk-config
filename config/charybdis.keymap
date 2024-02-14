@@ -36,14 +36,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        df_left_click {
-            bindings = <&mkp MB1>;
-            key-positions = <16 15>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -53,8 +46,8 @@
             bindings = <
 &trans  &kp Q            &kp W            &kp E                &kp R              &kp T        &kp Y        &kp U               &kp I                 &kp O             &kp P                     &trans
 &trans  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G        &kp H        &hml RIGHT_SHIFT J  &hml RIGHT_CONTROL K  &hml RIGHT_ALT L  &hml RIGHT_GUI SEMICOLON  &trans
-&trans  &lt 5 Z          &kp X            &kp C                &kp V              &kp B        &kp N        &kp M               &kp COMMA             &kp DOT           &lt 5 SLASH               &trans
-                                          &lt 6 ESCAPE         &lt 4 SPACE        &lt 3 TAB    &lt 2 ENTER  &lt 1 BACKSPACE
+&trans  &lt 6 Z          &kp X            &kp C                &kp V              &kp B        &kp N        &kp M               &kp COMMA             &kp DOT           &lt 7 SLASH               &trans
+                                          &lt 5 ESCAPE         &lt 4 SPACE        &lt 3 TAB    &lt 2 ENTER  &lt 1 BACKSPACE
             >;
         };
 
@@ -71,9 +64,9 @@
 
         Symbols {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TILDE       &kp EXCL       &kp AT                &kp HASH               &kp PIPE           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &trans  &trans  &trans  &trans  &kp APOS  &trans
+&trans  &kp TILDE       &kp EXCL       &kp AT                &kp HASH               &kp PIPE           &trans  &trans  &trans  &trans  &trans    &trans
                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER          &trans  &trans
             >;
 
@@ -102,17 +95,6 @@
             label = "Navigation";
         };
 
-        Pointer {
-            bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
-                        &mkp RCLK  &mkp LCLK  &mkp MCLK    &mkp MCLK  &mkp LCLK
-            >;
-
-            label = "Pointer";
-        };
-
         Media {
             bindings = <
 &trans  &trans      &trans        &trans      &trans            &trans        &trans      &trans            &trans      &trans        &trans      &trans
@@ -122,6 +104,39 @@
             >;
 
             label = "Media";
+        };
+
+        Pointer {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans       &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &tog 7  &tog 8     &trans     &trans       &trans     &trans     &tog 8  &tog 7  &trans  &trans
+                        &mkp RCLK  &mkp LCLK  &mkp MCLK    &mkp MCLK  &mkp LCLK
+            >;
+
+            label = "Pointer";
+        };
+
+        Scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+            >;
+
+            label = "Scroll";
+        };
+
+        Sniper {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+            >;
+
+            label = "Sniper";
         };
     };
 };
