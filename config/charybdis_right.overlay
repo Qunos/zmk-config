@@ -33,6 +33,13 @@
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         scroll-layers = <7>;
         snipe-layers = <8>;
-        // automouse-layer = <5>;
     };
 };
+
+/ {
+  trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+
+  };
+}; 
