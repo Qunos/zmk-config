@@ -24,3 +24,11 @@
 		, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
 };
+
+{
+  pmw3610_listener {
+    compatible = "zmk,input-listener";
+    device = <&pmw3610>;
+
+  };
+};
