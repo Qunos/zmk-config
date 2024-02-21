@@ -35,12 +35,10 @@
         snipe-layers = <8>;
         // automouse-layer = <5>;
     };
-};
 
-{
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&pmw3610>;
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&pmw3610>;
 
-  };
+    };
 };
